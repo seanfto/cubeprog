@@ -27,6 +27,16 @@ all: $(BINARIES) $(TESTBINARIES) $(PDFS)
 test: $(TESTBINARIES)
 	./cubepos_test && ./kocsymm_test && ./phase2prune_test && ./phase1prune_test
 
+clean:
+	rm -f $(BINARIES)
+	rm -f $(TESTBINARIES)
+	rm -f $(CFILES)
+	rm -f $(PDFS)
+	rm -f *.idx *.toc
+	rm -f cubepos.tex hcoset.tex kocsymm.tex phase1prune.tex phase2prune.tex twophase.tex
+	rm -f *.log *.scn
+	rm -f *.c
+
 dist:
 	rm -rf dist
 	mkdir dist
