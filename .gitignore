@@ -1,0 +1,26 @@
+*.c
+*.cpp
+*.h
+!bestsol.h
+!corner_order.h
+
+## Core latex/pdflatex auxiliary files:
+*.idx
+*.log
+*.toc
+
+## Cube20 generated files from .w cweb
+*.tex
+!cwebmac.tex
+*.scn
+*.pdf
+
+## Cube20 compiled files
+cubepos_test
+hcoset
+kocsymm_test
+phase1prune
+phase1prune_test
+phase2prune
+phase2prune_test
+twophase
